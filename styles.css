@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial Black, Helvetica, sans-serif;
+    color: white;
+}
+
+main {
+    display: grid;
+    background-color: #FFBE0B;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-areas: 
+        'aside nav nav nav'
+        'aside item1 item2 item3'
+        'aside item1 item4 item3';
+}
+
+nav {
+    grid-area: nav;
+    background-color: #FB5607;
+    padding: 2rem;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #FF006E;
+    padding: 2rem;
+}
+
+#Home, #Services, #About, #Contact {
+    padding: 2rem;
+}
+
+#Home {
+    grid-area: item1;
+    background-color: #8338EC;
+}
+
+#Services {
+    grid-area: item2;
+    background-color: #3A86FF;
+}
+
+#About {
+    grid-area: item3;
+    background-color: #fb5607;
+}
+
+#Contact {
+    grid-area: item4;
+    background-color: #eae2b7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
